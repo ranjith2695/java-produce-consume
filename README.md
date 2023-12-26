@@ -14,9 +14,7 @@ $ systemcrl start confluent-server.service
 # Start the Schema Registry, also in its own terminal.
 systemcrl start confluent-schema-registry.service
 
-Then create a topic called page_visits:
-
-# Create page_visits topic
+# Create  topic
 $ kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 \
                    --partitions 2 --topic topic_name
 
